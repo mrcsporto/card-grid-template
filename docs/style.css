@@ -1,0 +1,741 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+     
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color:  #EEF2F7;
+    height: 100%;
+}
+
+
+.container {
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+    width: 70rem;
+    height: 100vh;
+
+    display: grid;
+
+    grid-row-gap: 2rem;
+    grid-column-gap:2.35rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "card-1 card-1 card-2 card-3"
+        "card-4 card-5 card-5 card-3";
+}
+
+
+.card-1 {
+    grid-area: card-1;
+        
+    background: #6C41C2;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    /* max-width: 564px;
+    max-height: 290px; */
+
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    background-size: 6.5em;
+    background-color: #ddd 50%;
+}
+ 
+.card-2 {
+    grid-area: card-2;
+       
+    background: #4B5469;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    /* max-width: 270px;
+    max-height: 290px; */
+}
+
+.card-3 {
+    grid-area: card-3;
+ 
+    background: #FFFFFF;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* max-width: 270px;
+    max-height: 574px; */
+ 
+}
+
+.card-4 {
+    grid-area: card-4;
+    
+    background: #FFFFFF;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* max-width: 270px;
+    max-height: 260px; */
+}
+
+.card-5 {
+    grid-area: card-5;
+    
+    background: #19202C;
+    color: white;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* max-width: 564px;
+    max-height: 260px; */
+}
+ 
+
+img {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    
+}
+
+.inner-container {
+    justify-content: stretch;
+    align-content: stretch;
+    
+    grid-area: card-1;
+
+    display: grid;
+
+    grid-template-columns: 0.25fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr;
+    grid-template-areas:'a1 a2 a2'
+                        'a4 a4 a4'
+                        'a5 a5 a5';
+}
+
+.daniel-img {
+    grid-area: a1;
+   
+    align-self: auto;
+    
+
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2.5px #D77BFF;
+    
+
+}
+
+.name {
+    grid-area: a2;
+
+    margin-top: 1.5rem;
+    margin-left: 1.5em;
+    
+    align-self: flex-start;
+    justify-self: left;
+
+    font-size: 0.8125em;
+    font-weight: 600;
+ 
+    color: #EEF2F7;
+}
+
+.validation {
+    grid-area: a2;
+
+    margin-top: 1.5rem;
+    margin-left: 1.5em;
+    padding-top: 1.2em;
+    
+    align-self: flex-start;
+    justify-self: left;
+
+    font-size: 0.8125em;
+    font-weight: 400;
+      
+
+    color: rgba(238, 242, 247, 0.5);   
+}
+
+.title {
+    grid-area: a4;
+  
+    align-self: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 130%;
+    color: #EEF2F7;
+}
+
+.testimonial {
+    grid-area: a5;
+    
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+
+
+    align-self: center;
+
+    font-weight: 600;
+    font-size: 0.8125em;
+    line-height: 130%;
+    color: rgba(238, 242, 247, 0.5);
+    opacity: 0.8;
+}
+
+
+
+.inner-container-2 {
+    justify-content: stretch;
+    align-content: stretch;
+    
+    grid-area: card-2;
+
+    display: grid;
+
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr;
+    grid-template-areas:'a1 a2'
+                        'a4 a4'
+                        'a5 a5';
+}
+
+.jonathan-img {
+    grid-area: a1;
+   
+    align-self: auto;
+    
+
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+.name-2 {
+    grid-area: a2;
+
+    margin-top: 1.5rem;
+    margin-left: 1.5em;
+    
+    align-self: flex-start;
+    justify-self: left;
+
+    font-size: 0.8125em;
+    font-weight: 600;
+ 
+    color: #EEF2F7;
+}
+
+ .validation-2 {
+    grid-area: a2;
+
+    margin-top: 1.5rem;
+    margin-left: 1.5em;
+    padding-top: 1.2em;
+    
+    align-self: flex-start;
+    justify-self: left;
+
+    font-size: 0.8125em;
+    font-weight: 400;
+      
+
+    color: rgba(238, 242, 247, 0.5);   
+} 
+
+ .title-2 {
+    grid-area: a4;
+  
+    align-self: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 130%;
+    color: #EEF2F7;
+} 
+
+ .testimonial-2 {
+    grid-area: a5;
+    
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+
+
+    align-self: center;
+
+    font-weight: 600;
+    font-size: 0.8125em;
+    line-height: 130%;
+    color: rgba(238, 242, 247, 0.5);
+    opacity: 0.8;
+} 
+
+
+
+
+
+
+
+.inner-container-3 {
+    justify-content: stretch;
+    align-content: stretch;
+    
+    grid-area: card-3;
+
+    display: grid;
+
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: 0.25fr 1fr 3fr;
+    grid-template-areas:'a1 a2'
+                        'a4 a4'
+                        'a5 a5'
+                        
+                        
+}
+
+.kira-img {
+    grid-area: a1;
+   
+    align-self: auto;
+    
+
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+.name-3 {
+    grid-area: a2;
+
+    margin-top: 1.5rem;
+    margin-left: 1.5em;
+    
+    align-self: flex-start;
+    justify-self: left;
+
+    font-size: 0.8125em;
+    font-weight: 600;
+ 
+    color: #4B5469;
+}
+
+ .validation-3 {
+    grid-area: a2;
+
+    margin-top: 1.5rem;
+    margin-left: 1.5em;
+    padding-top: 1.2em;
+    
+    align-self: flex-start;
+    justify-self: left;
+
+    font-size: 0.8125em;
+    font-weight: 400;
+      
+    color: #4b546983;   
+} 
+
+ .title-3 {
+    grid-area: a4;
+  
+    align-self: center;
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 130%;
+    color: #4B5469;
+} 
+
+ .testimonial-3 {
+    grid-area: a5;
+    
+    align-self: center;
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    font-weight: 600;
+    font-size: 0.8125em;
+    line-height: 130%;
+    color: #4B5469;
+    opacity: 0.5;
+} 
+
+
+
+
+.inner-container-4 {
+    justify-content: stretch;
+    align-content: stretch;
+    
+    grid-area: card-4;
+
+    display: grid;
+
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr;
+    grid-template-areas:'a1 a2'
+                        'a4 a4'
+                        'a5 a5';
+}
+
+.jean-img {
+    grid-area: a1;
+   
+    align-self: auto;
+    
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+.name-4 {
+    grid-area: a2;
+
+    margin-top: 1.5rem;
+    margin-left: 1.5em;
+    
+    align-self: flex-start;
+    justify-self: left;
+
+    font-size: 0.8125em;
+    font-weight: 600;
+ 
+    color: #4B5469;
+}
+
+ .validation-4 {
+    grid-area: a2;
+
+    margin-top: 1.5rem;
+    margin-left: 1.5em;
+    padding-top: 1.2em;
+    
+    align-self: flex-start;
+    justify-self: left;
+
+    font-size: 0.8125em;
+    font-weight: 400;
+      
+
+    color: #4b546983;   
+} 
+
+ .title-4 {
+    grid-area: a4;
+  
+    align-self: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 130%;
+    color: #4B5469;
+} 
+
+ .testimonial-4 {
+    grid-area: a5;
+    
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+
+    align-self: center;
+
+    font-weight: 600;
+    font-size: 0.8125em;
+    line-height: 130%;
+    color: #4B5469;
+    opacity: 0.5;
+} 
+
+
+
+
+
+
+
+.inner-container-5 {
+    justify-content: stretch;
+    align-content: stretch;
+    
+    grid-area: card-1;
+
+    display: grid;
+
+    grid-template-columns: 0.25fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr;
+    grid-template-areas:'a1 a2 a2'
+                        'a4 a4 a4'
+                        'a5 a5 a5';
+}
+
+.patrick-img {
+    grid-area: a1;
+   
+    align-self: auto;
+    
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2.5px #d77bffbe;
+    
+
+}
+
+.name-5 {
+    grid-area: a2;
+
+    margin-top: 1.5rem;
+    margin-left: 1.5em;
+    
+    align-self: flex-start;
+    justify-self: left;
+
+    font-size: 0.8125em;
+    font-weight: 600;
+ 
+    color: #EEF2F7;
+}
+
+.validation-5 {
+    grid-area: a2;
+
+    margin-top: 1.5rem;
+    margin-left: 1.5em;
+    padding-top: 1.2em;
+    
+    align-self: flex-start;
+    justify-self: left;
+
+    font-size: 0.8125em;
+    font-weight: 400;
+      
+
+    color: rgba(238, 242, 247, 0.5);   
+}
+
+.title-5 {
+    grid-area: a4;
+  
+    align-self: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 130%;
+    color: #EEF2F7;
+}
+
+.testimonial-5 {
+    grid-area: a5;
+    
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+
+
+    align-self: center;
+
+    font-weight: 600;
+    font-size: 0.8125em;
+    line-height: 130%;
+    color: rgba(238, 242, 247, 0.5);
+    opacity: 0.8;
+}
+
+
+
+
+
+
+@media screen and (max-width:65rem) {
+    .container {
+        align-content: space-between;
+        justify-content: center;
+        margin: 0 auto;
+        
+        width: 50rem;
+        height: 100vh;
+        padding: 8vh;
+        
+        display: grid;
+    
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "card-1  card-1"
+            "card-2  card-3"
+            "card-4  card-3"
+            "card-5  card-5"
+    ;
+        transition: 300ms;
+    }
+     
+}
+
+
+@media screen and (max-width:55rem) {
+    .container {
+        align-content: space-between;
+        justify-content: center;
+        margin: 0 auto;
+        
+        width: 40rem;
+        height: 100vh;
+        padding: 5vh;
+        
+        display: grid;
+    
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "card-1  card-1"
+            "card-2  card-2"
+            "card-3  card-3"
+            "card-4  card-4"
+            "card-5  card-5"
+    ;
+        transition: 300ms;
+    }
+     
+}
+
+
+@media screen and (max-width:25rem) {
+    .container {
+        align-content: space-between;
+        justify-content: center;
+        margin: 0 auto;
+        
+        width: 25rem;
+        height: 100vh;
+        padding: 5vh;
+        
+        display: grid;
+    
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "card-1  card-1"
+            "card-2  card-2"
+            "card-3  card-3"
+            "card-4  card-4"
+            "card-5  card-5"
+    ;
+        transition: 300ms;
+    }
+     
+}
+
+
+
+    /* .title {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; 
+   }
+
+    .testimonial {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+   
+    } */
+
+
+
+
+/* @media screen and (max-width:720px) {
+    
+    .daniel-img {
+        align-self: auto;
+        margin-top: 2vh;
+        margin-left: 30%;
+        width: 0.1rem;
+        height: 0.1rem;
+        border-radius: 50%;
+
+    }
+
+    .name {
+        margin-top: 2.5vh;
+        margin-left: 0.2vw;
+        font-size: 9px;
+        align-self: baseline;
+       
+    }
+
+    .validation {
+        margin-left: 0.2vw;
+        
+        
+        font-size: 9px;
+
+        align-self: flex-end;
+     
+    }
+
+
+          
+    .title {
+        font-size: 2vw;
+        line-height: 120%;
+        margin-left: 10%;
+        margin-right: 10%;
+        transition: 400ms;
+    } 
+
+    .testimonial { 
+        font-size: 1.5vw;
+        line-height: 120%;
+
+        align-content: top;
+        
+        margin-top: 1rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 1.5rem;
+        transition: 400ms;
+
+    }
+ 
+} */
+
+/* text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; */
