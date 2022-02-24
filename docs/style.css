@@ -23,7 +23,7 @@ body {
     display: grid;
 
     grid-row-gap: 2rem;
-    grid-column-gap:2.2rem;
+    grid-column-gap:2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: 
