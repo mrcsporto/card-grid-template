@@ -10,14 +10,14 @@
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color:  #EEF2F7;
-    height: 100%;
+    scroll-behavior: smooth;
 }
 
 
 .container {
     align-content: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: auto;
     
     width: 70rem;
     height: 100vh;
@@ -25,7 +25,7 @@ body {
     display: grid;
 
     grid-row-gap: 2rem;
-    grid-column-gap:2.35rem;
+    grid-column-gap:2.2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: 
@@ -36,6 +36,8 @@ body {
 
 .card-1 {
     grid-area: card-1;
+
+    height: auto;
         
     background: #6C41C2;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
@@ -52,7 +54,9 @@ body {
  
 .card-2 {
     grid-area: card-2;
-       
+    
+    height: auto;
+
     background: #4B5469;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -62,6 +66,8 @@ body {
 
 .card-3 {
     grid-area: card-3;
+
+    height: auto;
  
     background: #FFFFFF;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
@@ -73,6 +79,8 @@ body {
 
 .card-4 {
     grid-area: card-4;
+
+    height: auto;
     
     background: #FFFFFF;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
@@ -83,6 +91,8 @@ body {
 
 .card-5 {
     grid-area: card-5;
+
+    height: auto;
     
     background: #19202C;
     color: white;
@@ -573,6 +583,13 @@ img {
     opacity: 0.8;
 }
 
+.attribution { 
+    position: relative;
+    margin: 0 auto;
+  
+    text-align: center; 
+  
+}
 
 
 
@@ -585,8 +602,11 @@ img {
         margin: 0 auto;
         
         width: 100vw;
-        height: 100vh;
+        height: 100%;
+
         padding: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         
         display: grid;
 
@@ -612,8 +632,11 @@ img {
         margin: 0 auto;
         
         width: 100vw;
-        height: 100vh;
+        height: 100%;
+       
         padding: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         
         display: grid;
 
@@ -627,27 +650,30 @@ img {
             "card-4  card-4"
             "card-5  card-5"
     ;
-
     }
+    
      
 }
 
 
-@media screen and (max-width:749px) {
+@media screen and (max-width:720px) {
     .container {
         align-content: space-between;
         justify-content: center;
-        margin: auto;
+        margin:  0 auto;
         
-        width: 100vw;
-        height: 100vh;
+        width: 100vw; 
+        height: 100%;     
+       
         padding: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         
         display: grid;
 
         grid-row-gap: 2rem;
         grid-template-columns: 2fr 2fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
         grid-template-areas: 
             "card-1  card-1"
             "card-2  card-2"
@@ -656,83 +682,41 @@ img {
             "card-3  card-3"
     ;
     }
-     
-}
+
+    .card-1 {
+        height: fit-content;
+    }
+
+    .card-2 {
+        height: fit-content;
+    }
+
+    .card-3 {
+        height: fit-content;
+    }
+    .card-4 {
+        height: fit-content;
+    }
+
+    .card-5 {
+        height: fit-content;
+    }
 
 
 
-    /* .title {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden; 
-   }
-
-    .testimonial {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-   
-    } */
-
-
-
-
-/* @media screen and (max-width:720px) {
+    .inner-container-5 {
+        justify-content: stretch;
+        align-content: stretch;
+        
+        grid-area: card-1;
     
-    .daniel-img {
-        align-self: auto;
-        margin-top: 2vh;
-        margin-left: 30%;
-        width: 0.1rem;
-        height: 0.1rem;
-        border-radius: 50%;
-
+        display: grid;
+    
+        grid-template-columns: 0.25fr 1fr;
+        grid-template-rows: 0.25fr 1.2fr 1fr;
+        grid-template-areas:'a1 a2'
+                            'a4 a4'
+                            'a5 a5';
     }
-
-    .name {
-        margin-top: 2.5vh;
-        margin-left: 0.2vw;
-        font-size: 9px;
-        align-self: baseline;
-       
-    }
-
-    .validation {
-        margin-left: 0.2vw;
-        
-        
-        font-size: 9px;
-
-        align-self: flex-end;
-     
-    }
-
-
-          
-    .title {
-        font-size: 2vw;
-        line-height: 120%;
-        margin-left: 10%;
-        margin-right: 10%;
-        transition: 400ms;
-    } 
-
-    .testimonial { 
-        font-size: 1.5vw;
-        line-height: 120%;
-
-        align-content: top;
-        
-        margin-top: 1rem;
-        margin-left: 10%;
-        margin-right: 10%;
-        padding-bottom: 1.5rem;
-        transition: 400ms;
-
-    }
- 
-} */
-
-/* text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden; */
+    
+}
