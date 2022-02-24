@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
-     
 }
 
 body {
@@ -198,7 +196,7 @@ img {
     font-weight: 600;
     font-size: 0.8125em;
     line-height: 130%;
-    color: rgba(238, 242, 247, 0.5);
+    color: #EEF2F7;
     opacity: 0.8;
 }
 
@@ -292,7 +290,7 @@ img {
     font-weight: 600;
     font-size: 0.8125em;
     line-height: 130%;
-    color: rgba(238, 242, 247, 0.5);
+    color: hsl(0, 0%, 85%);
     opacity: 0.8;
 } 
 
@@ -579,7 +577,7 @@ img {
     font-weight: 600;
     font-size: 0.8125em;
     line-height: 130%;
-    color: rgba(238, 242, 247, 0.5);
+    color: hsl(0, 0%, 85%);;
     opacity: 0.8;
 }
 
@@ -634,7 +632,7 @@ img {
         width: 100vw;
         height: 100%;
        
-        padding: 5rem;
+        padding: 2rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
         
