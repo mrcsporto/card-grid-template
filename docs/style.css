@@ -598,7 +598,7 @@ img {
             "card-4  card-3"
             "card-5  card-5"
     ;
-        transition: 200ms;
+    
     }
      
 }
@@ -625,7 +625,7 @@ img {
             "card-4  card-4"
             "card-5  card-5"
     ;
-        transition: 200ms;
+
     }
      
 }
@@ -652,7 +652,6 @@ img {
             "card-5  card-5"
             "card-3  card-3"
     ;
-        transition: 200ms;
     }
      
 }
