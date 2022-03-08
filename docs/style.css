@@ -597,7 +597,7 @@ img {
 
 
 
-@media screen and (max-width:1040px) {
+@media screen and (max-width:1024px) {
     .container {
         align-content: space-between;
         justify-content: center;
@@ -612,9 +612,9 @@ img {
         
         display: grid;
 
-        grid-gap: 2rem;     
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 1.5rem;     
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
         grid-template-areas: 
             "card-1  card-1"
             "card-2  card-3"
@@ -627,7 +627,7 @@ img {
 }
 
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:768px) {
     .container {
         align-content: space-between;
         justify-content: center;
@@ -644,7 +644,7 @@ img {
 
         grid-gap: 1.5rem;    
         grid-template-columns: 2fr 2fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
         grid-template-areas: 
             "card-1  card-1"
             "card-2  card-2"
@@ -653,12 +653,98 @@ img {
             "card-5  card-5"
     ;
     }
+
+    .card-1 {
+        height: fit-content;
+    }
+
+    .card-2 {
+        height: fit-content;
+    }
+
+    .card-3 {
+        height: fit-content;
+    }
+    .card-4 {
+        height: fit-content;
+    }
+
+    .card-5 {
+        height: fit-content;
+    }
+
+    .inner-container-2 {
+        justify-content: stretch;
+        align-content: stretch;
+        
+        grid-area: card-2;
+    
+        display: grid;
+
+        grid-row-gap: 1rem;
+        grid-template-columns: 0.25fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:'a1 a2 a2'
+                            'a4 a4 a4'
+                            'a5 a5 a5';
+    }
+
+    .inner-container-3 {
+        justify-content: stretch;
+        align-content: stretch;
+        
+        grid-area: card-3;
+    
+        display: grid;
+    
+        grid-row-gap: 1rem;
+        grid-template-columns: 0.25fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:'a1 a2 a2'
+                            'a4 a4 a4'
+                            'a5 a5 a5';
+    }
+
+
+
+    .inner-container-4 {
+        justify-content: stretch;
+        align-content: stretch;
+        
+        grid-area: card-4;
+    
+        display: grid;
+
+        grid-row-gap: 1rem;
+        grid-template-columns: 0.25fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:'a1 a2 a2'
+                            'a4 a4 a4'
+                            'a5 a5 a5';
+    }
+
+
+    .inner-container-5 {
+        justify-content: stretch;
+        align-content: stretch;
+        
+        grid-area: card-5;
+    
+        display: grid;
+
+        grid-row-gap: 1rem;    
+        grid-template-columns: 0.25fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:'a1 a2 a2'
+                            'a4 a4 a4'
+                            'a5 a5 a5';
+    }
     
      
 }
 
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:640px) {
     .container {
         align-content: space-between;
         justify-content: center;
