@@ -22,8 +22,8 @@ body {
 
     display: grid;
 
-    grid-row-gap: 2rem;
-    grid-column-gap:2rem;
+    grid-row-gap: 1.8rem;
+    grid-column-gap:1.8rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: 
@@ -45,8 +45,8 @@ body {
 
     background-image: url(images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
-    background-position-x: 75%;
-    background-size: 6.5em;
+    background-position-x: 80%;
+    background-size: 6.8em;
     background-color: #ddd 50%;
 }
  
@@ -582,12 +582,16 @@ img {
 }
 
 .attribution { 
-    position: relative;
-    margin: 0 auto;
-  
-    text-align: center; 
-  
+    font-size: 11px;  
+    text-align: center;
+    margin-bottom: 1rem;
+   
 }
+ 
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
 
 
 
