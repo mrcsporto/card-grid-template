@@ -673,7 +673,7 @@ img {
         
         display: grid;
 
-        grid-row-gap: 2rem;
+        grid-row-gap: 1.5rem;
         grid-template-columns: 2fr 2fr;
         grid-template-rows: auto;
         grid-template-areas: 
@@ -704,21 +704,71 @@ img {
         height: fit-content;
     }
 
+    .inner-container-2 {
+        justify-content: stretch;
+        align-content: stretch;
+        
+        grid-area: card-2;
+    
+        display: grid;
+
+        grid-row-gap: 1rem;
+        grid-template-columns: 0.25fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:'a1 a2 a2'
+                            'a4 a4 a4'
+                            'a5 a5 a5';
+    }
+
+    .inner-container-3 {
+        justify-content: stretch;
+        align-content: stretch;
+        
+        grid-area: card-3;
+    
+        display: grid;
+    
+        grid-row-gap: 1rem;
+        grid-template-columns: 0.25fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:'a1 a2 a2'
+                            'a4 a4 a4'
+                            'a5 a5 a5';
+    }
+
+
+
+    .inner-container-4 {
+        justify-content: stretch;
+        align-content: stretch;
+        
+        grid-area: card-4;
+    
+        display: grid;
+
+        grid-row-gap: 1rem;
+        grid-template-columns: 0.25fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:'a1 a2 a2'
+                            'a4 a4 a4'
+                            'a5 a5 a5';
+    }
 
 
     .inner-container-5 {
         justify-content: stretch;
         align-content: stretch;
         
-        grid-area: card-1;
+        grid-area: card-5;
     
         display: grid;
-    
-        grid-template-columns: 0.25fr 1fr;
-        grid-template-rows: 0.25fr 1.2fr 1fr;
-        grid-template-areas:'a1 a2'
-                            'a4 a4'
-                            'a5 a5';
+
+        grid-row-gap: 1rem;    
+        grid-template-columns: 0.25fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:'a1 a2 a2'
+                            'a4 a4 a4'
+                            'a5 a5 a5';
     }
     
 }
